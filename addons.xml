@@ -156,36 +156,57 @@
 		</assets>
 		<news>1 Version</news>
 	</extension>
-</addon><addon id="plugin.video.f4mTester" name="f4mTester" provider-name="Shani" version="2.7.2">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.video.F4mProxy" version="2.7.1" />
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>f4mTester</summary>
-        <description />
-        <platform>all</platform>
-    </extension>
+</addon><addon id="plugin.video.f4mTester" name="f4mTester" provider-name="Shani" version="2.7.1">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.video.F4mProxy" version="2.7.1" />
+	</requires>
+	<extension library="default.py" point="xbmc.python.pluginsource">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>f4mTester</summary>
+		<description />
+		<platform>all</platform>
+	</extension>
 </addon><addon id="script.video.F4mProxy" name="F4mProxy" provider-name="Shani" version="2.8.7">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-    <extension library="addon.py" point="xbmc.python.pluginsource">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension library="lib" point="xbmc.python.module" />
+		<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>executable</provides>
-  </extension>
-
-
-    
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Proxy for f4m</summary>
-    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-  </extension>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Proxy for f4m</summary>
+		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+	</extension>
+</addon><addon id="script.module.nanscrapers" name="NaN Scrapers" provider-name="Team NaN" version="0.5.44">
+        <requires>
+                <import addon="xbmc.python" version="2.1.0" />
+                <import addon="script.module.beautifulsoup" version="3.2.1" />
+                <import addon="script.module.futures" version="2.2.0" />
+                <import addon="script.module.requests" />
+                <import addon="script.module.six" />
+                
+                
+        </requires>
+        <extension library="lib" point="xbmc.python.module" />
+        <extension library="lib/default.py" point="xbmc.python.pluginsource">
+                <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <platform>all</platform>
+                <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+                <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+                </description>
+                <license>GPL v3</license>
+                <source>https://github.com/noobsandnerds/noobsandnerds/tree/master/script.module.nanscrapers</source>
+                <forum>http://www.noobsandnerds.com/support/showthread.php?tid=17212</forum>
+                <website>http://noobsandnerds.com</website>
+        </extension>
 </addon><addon id="script.module.liveresolver" name="LiveResolver" provider-name="natko1412" version="0.1.50">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
