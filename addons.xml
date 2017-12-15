@@ -156,6 +156,26 @@
 		</assets>
 		<news>1 Version</news>
 	</extension>
+</addon><addon id="script.sedundnes.artwork" name="Not Sure Artwork" provider-name="seduNdneS" version="1.0.1">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+	</requires>
+	<extension library="lib" point="xbmc.python.module" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Not Sure Addon</summary>
+		<description>Themes for Not Sure are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon><addon id="script.sedundnes.metadata" name="Not Sure Metadata" provider-name="seduNdneS" version="1.0.1">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+	</requires>
+	<extension library="lib" point="xbmc.python.module" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Not Sure Addon</summary>
+		<description>Metadata for Not Sure are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
 </addon><addon id="plugin.video.f4mTester" name="f4mTester" provider-name="Shani" version="2.7.1">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
