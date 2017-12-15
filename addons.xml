@@ -176,6 +176,72 @@
 		<description>Metadata for Not Sure are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
+</addon><addon id="script.snsports" name="Sports" provider-name="seduNdneS" version="0.0.7">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.httplib2" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.liveresolver" />
+    <import addon="script.module.urlresolver" />
+    <import addon="script.video.F4mProxy" />
+    <import addon="plugin.video.f4mTester" />
+    <import addon="plugin.video.SportsDevil" />
+    <import addon="program.plexus" optional="true" version="0.1.4" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>all</provides>
+  </extension> 
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Just a Depend</summary>
+    <description lang="en">Just a Depend</description>
+    <disclaimer lang="en">Just a Depend</disclaimer>
+    <language />
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>-</forum>
+    <website>-</website>
+    <email>-</email>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon><addon id="script.snstream" name="Live" provider-name="seduNdneS" version="0.0.8">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.requests" />
+	<import addon="script.module.urlresolver" />
+	<import addon="script.module.liveresolver" />
+	<import addon="script.module.beautifulsoup4" />
+	<import addon="script.module.livestreamer" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Dependency Addon for Not Sure</summary>
+    <description lang="en">Dependency Addon for Not Sure</description>
+	<disclaimer lang="en">Dependency Addon for Not Sure</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon><addon id="script.snxxx" name="XXX" provider-name="seduNdneS" version="0.0.10">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.urlresolver" />
+  </requires>
+  <extension library="snxxx.py" point="xbmc.python.pluginsource">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">-</summary>
+    <description lang="en">XXX depend for NotSure Addon</description>
+    <disclaimer lang="en">.</disclaimer>
+    <language />
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon><addon id="plugin.video.f4mTester" name="f4mTester" provider-name="Shani" version="2.7.1">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
