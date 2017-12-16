@@ -36,6 +36,29 @@
 		</assets>
 		<news />
 	</extension>
+</addon><addon id="plugin.video.castaway" name="Castaway" provider-name="natko1412" version="0.2.8">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup" version="3.2.1" />
+		<import addon="script.module.requests" />
+    	<import addon="script.module.addon.common" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.liveresolver" />
+		<import addon="script.module.livestreamer" />
+		
+    	
+	</requires>
+	<extension library="default.py" point="xbmc.python.pluginsource">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a castaway.</summary>
+		<description lang="en">Visit TVADDONS.ag for support.
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		
+		<platform>all</platform>
+	</extension>
 </addon><addon id="script.covenant.artwork" name="Covenant Artwork" provider-name="Covenant" version="1.0.3">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
