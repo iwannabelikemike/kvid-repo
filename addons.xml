@@ -122,19 +122,4 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
 	</extension>
-</addon><addon id="script.module.liveresolver" name="LiveResolver" provider-name="natko1412" version="0.1.50">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-	<import addon="script.module.simplejson" version="3.3.0" />
-    <import addon="script.module.beautifulsoup" version="3.2.1" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.addon.common" version="2.0.0" />
-
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
-    <description lang="en" />    
-  </extension>
 </addon></addons>
