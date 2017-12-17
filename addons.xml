@@ -79,7 +79,7 @@
 		<description>Metadata for Covenant are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.covenant" name="Covenant Module" provider-name="Covenant" version="1.0.27">
+</addon><addon id="script.module.covenant" name="Covenant Module" provider-name="Covenant" version="1.0.28">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
