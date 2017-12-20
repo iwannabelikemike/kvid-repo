@@ -9,6 +9,7 @@
 		<import addon="script.module.urlresolver" version="3.0.0" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.beautifulsoup4" version="4.3.2" />
 	</requires>
 	<extension library="covenant.py" point="xbmc.python.pluginsource">
 		<provides>video</provides>
@@ -79,7 +80,7 @@
 		<description>Metadata for Covenant are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.covenant" name="Covenant Module" provider-name="Covenant" version="1.0.28">
+</addon><addon id="script.module.covenant" name="Covenant Module" provider-name="Covenant" version="1.0.29">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -108,6 +109,18 @@
     <email />
     <source />
   </extension>
+</addon><addon id="script.module.beautifulsoup4" name="BeautifulSoup4" provider-name="Leonard Richardson (leonardr@segfault.org)" version="4.3.2">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+    <website>http://www.crummy.com/software/BeautifulSoup/</website>
+  </extension>
 </addon><addon id="program.plexus" name="Plexus" provider-name="enen92, TVAddons, RonnieHD" version="0.1.7">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -127,7 +140,7 @@
    	<disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
     <platform>all</platform>
   </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="Eldorado, tknorris, tvaddons" version="4.0.15">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="Eldorado, tknorris, tvaddons" version="4.0.16">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
