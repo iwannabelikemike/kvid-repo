@@ -121,6 +121,21 @@
     <platform>all</platform>
     <website>http://www.crummy.com/software/BeautifulSoup/</website>
   </extension>
+</addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="moose" version="0.0.1">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+    		<import addon="script.module.addon.common" />
+	</requires>
+	<extension library="default.py" point="xbmc.python.pluginsource">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a little sparkle.</summary>
+		<description lang="en">A small plugin for playing reddit acestreams
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon><addon id="program.plexus" name="Plexus" provider-name="enen92, TVAddons, RonnieHD" version="0.1.7">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
