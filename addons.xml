@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.covenant" name="Covenant" provider-name="Covenant" version="1.1.36">
+<addons><addon id="plugin.video.covenant" name="Covenant" provider-name="Covenant" version="1.1.37">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		
@@ -121,7 +121,7 @@
     <platform>all</platform>
     <website>http://www.crummy.com/software/BeautifulSoup/</website>
   </extension>
-</addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="moose" version="0.0.2">
+</addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="moose" version="0.0.3">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.addon.common" />
