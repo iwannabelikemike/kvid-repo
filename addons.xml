@@ -137,6 +137,37 @@
 		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon><addon id="plugin.video.maximus" name=" Maximus" provider-name="Moose" version="1.0.1">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.maximus.artwork" />
+		<import addon="script.maximus.metadata" />
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.metahandler" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.schism.common" />
+    <import addon="script.module.futures" />
+    <import addon="script.module.nanscrapers" version="0.5.41" />
+	</requires>
+	<extension library="maximus.py" point="xbmc.python.pluginsource">
+		<provides>video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Maximus</summary>
+		<description lang="en">Movie, TV Show, and Playlist Add-on</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+		<forum />
+		<website />
+		<source />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news />
+	</extension>
 </addon><addon id="program.plexus" name="Plexus" provider-name="enen92, TVAddons, RonnieHD" version="0.1.7">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
