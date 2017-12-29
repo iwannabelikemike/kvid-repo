@@ -168,6 +168,39 @@
 		</assets>
 		<news />
 	</extension>
+</addon><addon id="script.maximus.artwork" name="Maximus Artwork" provider-name="Mr.Blamo" version="1.0.9">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+	</requires>
+	<extension library="lib" point="xbmc.python.module" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Maximus Addon</summary>
+		<description>Themes for Maximus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon><addon id="script.maximus.metadata" name="Maximus Metadata" provider-name="Mr.Blamo" version="1.0.4">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+	</requires>
+	<extension library="lib" point="xbmc.python.module" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Maximus Addon</summary>
+		<description>Metadata for Maximus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon><addon id="script.module.futures" name="futures" provider-name="Brian Quinlan" version="2.2.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>A futures implementation for Python</summary>
+    <description>Backport of the concurrent.futures package from Python 3.2</description>
+    <platform>all</platform>
+    <license>BSD</license>
+    <source>https://code.google.com/p/pythonfutures/source/browse</source>
+    <website>https://code.google.com/p/pythonfutures</website>
+  </extension>
 </addon><addon id="program.plexus" name="Plexus" provider-name="enen92, TVAddons, RonnieHD" version="0.1.7">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
