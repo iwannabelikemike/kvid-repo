@@ -1,37 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.5">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.incursion" />
-		<import addon="script.incursion.artwork" />
-		<import addon="script.incursion.metadata" />
-		<import addon="script.module.urlresolver" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
-	</requires>
-	<extension library="incursion.py" point="xbmc.python.pluginsource">
-		<provides>video</provides>
-	</extension>
-	<extension library="service.py" point="xbmc.service" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Incursion</summary>
-		<description lang="en">[I]New Resistance[/I][CR][CR][B]Incursion - Media for the Masses[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum />
-		<website />
-		<source />
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-		</assets>
-		<news />
-	</extension>
-</addon><addon id="script.incursion.artwork" name="Incursion Artwork" provider-name="Incursion" version="1.0.7">
+<addons><addon id="script.incursion.artwork" name="Incursion Artwork" provider-name="Incursion" version="1.0.7">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 	</requires>
@@ -138,6 +106,38 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news />
+	</extension>
+</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.5">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.incursion" />
+		<import addon="script.incursion.artwork" />
+		<import addon="script.incursion.metadata" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension library="incursion.py" point="xbmc.python.pluginsource">
+		<provides>video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Incursion</summary>
+		<description lang="en">[I]New Resistance[/I][CR][CR][B]Incursion - Media for the Masses[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum />
+		<website />
+		<source />
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news />
 	</extension>
