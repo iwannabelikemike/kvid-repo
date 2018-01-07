@@ -1,33 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.covenant" name="Covenant" provider-name="Covenant" version="1.1.38">
+<addons><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.5">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		
-		<import addon="script.module.covenant" />
-		<import addon="script.covenant.artwork" version="1.0.0" />
-		<import addon="script.covenant.metadata" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.incursion" />
+		<import addon="script.incursion.artwork" />
+		<import addon="script.incursion.metadata" />
+		<import addon="script.module.urlresolver" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="1.0.0" />
-		<import addon="script.module.beautifulsoup4" version="4.3.2" />
 	</requires>
-	<extension library="covenant.py" point="xbmc.python.pluginsource">
+	<extension library="incursion.py" point="xbmc.python.pluginsource">
 		<provides>video</provides>
 	</extension>
 	<extension library="service.py" point="xbmc.service" start="startup" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Covenant</summary>
-		<description lang="en">[I]A New Generation[/I][CR][CR][B]Covenant Movies and TV[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-		<description lang="hr">[I]Nova generacija[/I][CR][CR][B]Covenant Filmova i TV serija[/B][CR][CR]Ovaj dodatak ne sadrži dijelove Kodi Medijskog Centra. Ne tažite pomoć za ovaj dodatak na službenim kanalima podrške za Kodi.[CR][CR]Autor ne posjeduje bilo kakav sadržaj u ovom dodatku i ne preuzima bilo kakvu odgovornost za pronađeni sadržaj.</description>
-		<description lang="he">[I]הדור החדש[/I][CR][CR][B]Covenant סרטים וסדרות[/B][CR][CR]ההרחבה הזו אינה חלק של Kodi Media Center. אנא אל תבקש עזרה עם ההרחבה זה מכל אחד מערוצי התמיכה הרשמיים של Kodi [CR][CR]. אין למחבר תוכן בהרחבה הזו והמחבר אינו אחראי לתוכן שנמצא.</description>
+		<summary lang="en">Incursion</summary>
+		<description lang="en">[I]New Resistance[/I][CR][CR][B]Incursion - Media for the Masses[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum />
 		<website />
 		<source />
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje bilo kakav sadržaj koji je pronađen i nije povezan sa bilo kojim izvorom sadržaja. Ovaj dodatak samo pretražuje sadržaj na web stranicama. Koristite ga na vlastitu odgovornost!</disclaimer>
-		<disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -37,34 +31,35 @@
 		</assets>
 		<news />
 	</extension>
-</addon><addon id="script.covenant.artwork" name="Covenant Artwork" provider-name="Covenant" version="1.0.3">
+</addon><addon id="script.incursion.artwork" name="Incursion Artwork" provider-name="Incursion" version="1.0.7">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 	</requires>
 	<extension library="lib" point="xbmc.python.module" />
 	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Covenant Addon</summary>
+		<summary>Themes for the Incursion Addon</summary>
 		<description />
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.covenant.metadata" name="Covenant Metadata" provider-name="Covenant" version="1.0.2">
+</addon><addon id="script.incursion.metadata" name="Incursion Metadata" provider-name="Incursion" version="1.0.3">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 	</requires>
 	<extension library="lib" point="xbmc.python.module" />
 	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the Covenant Addon</summary>
-		<description>Metadata for Covenant are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<summary>Metadata for the Incursion Addon</summary>
+		<description>Metadata for Incursion are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.covenant" name="Covenant Module" provider-name="Covenant" version="1.0.34">
+</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.06">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4" />
 	</requires>
 	<extension library="lib" point="xbmc.python.module" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en">Covenant</summary>
+		<summary lang="en">Incursion</summary>
 	</extension>
 </addon><addon id="script.module.metahandler" name="metahandler" provider-name="Eldorado, jsergio" version="3.0.2">
   <requires>
