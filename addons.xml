@@ -19,7 +19,7 @@
 		<description>Metadata for Incursion are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.06">
+</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.08">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -109,7 +109,7 @@
 		</assets>
 		<news />
 	</extension>
-</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.5">
+</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.7">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.incursion" />
