@@ -61,9 +61,9 @@
     <platform>all</platform>
     <website>http://www.crummy.com/software/BeautifulSoup/</website>
   </extension>
-</addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="moose" version="0.0.74">
+</addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="moose" version="0.0.75">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.addon.common" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
