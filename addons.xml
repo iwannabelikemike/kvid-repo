@@ -19,7 +19,7 @@
 		<description>Metadata for Incursion are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.08">
+</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.09">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -109,7 +109,7 @@
 		</assets>
 		<news />
 	</extension>
-</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.7">
+</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.8">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.incursion" />
@@ -139,7 +139,15 @@
     			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
     			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
-		<news />
+		<news>v0.1.8 (Jan-2018)
+		- Added Movies support to ALLRLS
+		- Fixed Value Error in ALLRLS Script
+		- Updated CFSCRAPE to support new cloudflare header
+		- Cmovies now uses episode titles to find correct episode
+		- CartoonHD now uses episode titles to find correct episode
+		- Fixed Mehliz TV and Movie Support
+		- Cleaned Up Sources in settings.xml
+		</news>
 	</extension>
 </addon><addon id="script.maximus.artwork" name="Maximus Artwork" provider-name="Mr.Blamo" version="1.0.9">
 	<requires>
@@ -232,7 +240,7 @@
    	<disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
     <platform>all</platform>
   </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="Eldorado, tknorris, tvaddons" version="4.0.16">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="Eldorado, tknorris, tvaddons" version="4.0.17">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
