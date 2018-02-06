@@ -19,7 +19,7 @@
 		<description>Metadata for Incursion are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.13">
+</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.14">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -109,13 +109,13 @@
 		</assets>
 		<news />
 	</extension>
-</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.12">
+</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.13">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.incursion" />
 		<import addon="script.incursion.artwork" />
 		<import addon="script.incursion.metadata" />
-		<import addon="script.module.urlresolver" />
+		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
@@ -139,10 +139,13 @@
     			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
     			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>v0.1.12 (Jan-2018)
-		- Added Season 0 Support
-		- Added Find Similar Context Menu Feature
-		- Added option to disable 24 hour library import delay
+		<news>v0.1.13 (Feb-2018)
+		- Re-added Filepursuit scraper
+		- Changes to Furk Scraper - better link identification
+		- Moved Away from TVA URLResolver to Jsergios ResolveURL
+		- Fixed 24 hour delay option
+		- Removed URLResolver from Repo
+		- Removed BeautifulSoup from Repo
 		</news>
 	</extension>
 </addon><addon id="script.maximus.artwork" name="Maximus Artwork" provider-name="Mr.Blamo" version="1.0.9">
