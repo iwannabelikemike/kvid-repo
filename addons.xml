@@ -19,7 +19,7 @@
 		<description>Metadata for Incursion are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.15">
+</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.16">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -78,7 +78,7 @@
 		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.13">
+</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.14">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.incursion" />
@@ -108,13 +108,11 @@
     			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
     			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>v0.1.13 (Feb-2018)
-		- Re-added Filepursuit scraper
-		- Changes to Furk Scraper - better link identification
-		- Moved Away from TVA URLResolver to Jsergios ResolveURL
-		- Fixed 24 hour delay option
-		- Removed URLResolver from Repo
-		- Removed BeautifulSoup from Repo
+		<news>
+			v0.1.14 (FEB-2018)
+			- Furk scraper now supports t_files and season 			packs.
+			- Added Trakt On Deck menu item
+			- Increased support for Xbox One Console.
 		</news>
 	</extension>
 </addon><addon id="script.maximus.artwork" name="Maximus Artwork" provider-name="Mr.Blamo" version="1.0.9">
