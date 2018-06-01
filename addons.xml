@@ -150,7 +150,7 @@ Fixed search issue caused by character accents
     <source>https://code.google.com/p/pythonfutures/source/browse</source>
     <website>https://code.google.com/p/pythonfutures</website>
   </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.05">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.10">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
