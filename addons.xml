@@ -117,7 +117,7 @@ Fixed Trakt On Deck Magical Dissapearing Act
 Fixed search issue caused by character accents
 		</news>
 	</extension>
-</addon><addon id="plugin.video.realdebrid" name="Real Debrid - kodiwpigulce.pl" provider-name="www.kodiwpigulce.pl" version="1.0.0">
+</addon><addon id="plugin.video.realdebrid" name="Real Debrid" provider-name="moose" version="1.0.0">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
     <import addon="script.module.requests" version="2.12.4" />
@@ -131,12 +131,11 @@ Fixed search issue caused by character accents
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
   <summary lang="en">Video plugin for Real-Debrid.com
-  Big thanks to u/p1c2u and u/Darreen
   </summary>
   <summary lang="pl">Wtyczka wideo do Real-Debrid.com
   Podziękowania dla u/p1c2u i u/Darreen
   </summary>
-   <description lang="en">Explore and stream your downloads folder on real-debrid.com 
+   <description lang="en">Explore and stream your downloads folder on real-debrid.com
    --
    works on Xbox ONE - Kodi 18
  </description>

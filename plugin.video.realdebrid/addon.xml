@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.realdebrid"
-       name="Real Debrid - kodiwpigulce.pl"
+       name="Real Debrid"
        version="1.0.0"
-       provider-name="www.kodiwpigulce.pl">
+       provider-name="moose">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
     <import addon="script.module.requests" version="2.12.4"/>
@@ -16,12 +16,11 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
   <summary lang="en">Video plugin for Real-Debrid.com
-  Big thanks to u/p1c2u and u/Darreen
   </summary>
   <summary lang="pl">Wtyczka wideo do Real-Debrid.com
   Podziękowania dla u/p1c2u i u/Darreen
   </summary>
-   <description lang="en">Explore and stream your downloads folder on real-debrid.com 
+   <description lang="en">Explore and stream your downloads folder on real-debrid.com
    --
    works on Xbox ONE - Kodi 18
  </description>
