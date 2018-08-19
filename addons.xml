@@ -19,10 +19,11 @@
 		<description>Metadata for Incursion are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.20">
+</addon><addon id="script.module.incursion" name="Incursion Module" provider-name="Incursion" version="1.21">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
+                <import addon="script.module.ptw" />
 	</requires>
 	<extension library="lib" point="xbmc.python.module" />
 	<extension point="xbmc.addon.metadata">
@@ -61,6 +62,17 @@
     <platform>all</platform>
     <website>http://www.crummy.com/software/BeautifulSoup/</website>
   </extension>
+</addon><addon id="script.module.ptw" name="PTW Module" provider-name="PTW" version="2018.07.24.0">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension library="lib" point="xbmc.python.module" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">PTW</summary>
+	</extension>
 </addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="moose" version="0.0.77">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
@@ -78,7 +90,7 @@
 		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.17">
+</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.16">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.incursion" />
@@ -156,26 +168,6 @@ Fixed search issue caused by character accents
 		- Usunięcie URLResolver z repozytorium / Removed URLResolver from Repo
 		</news>
   </extension>
-</addon><addon id="script.maximus.artwork" name="Maximus Artwork" provider-name="Mr.Blamo" version="1.0.9">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-	</requires>
-	<extension library="lib" point="xbmc.python.module" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Maximus Addon</summary>
-		<description>Themes for Maximus are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
-</addon><addon id="script.maximus.metadata" name="Maximus Metadata" provider-name="Mr.Blamo" version="1.0.4">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-	</requires>
-	<extension library="lib" point="xbmc.python.module" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the Maximus Addon</summary>
-		<description>Metadata for Maximus are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
 </addon><addon id="script.module.futures" name="futures" provider-name="Brian Quinlan" version="2.2.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
