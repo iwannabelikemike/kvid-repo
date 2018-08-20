@@ -70,7 +70,7 @@
 		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.16">
+</addon><addon id="plugin.video.incursion" name="Incursion" provider-name="Incursion" version="0.1.17">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.incursion" />
