@@ -225,7 +225,7 @@ Fixed search issue caused by character accents
 		<description />
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.exodusredux" name="Exodus Redux Module" provider-name="I-A-C" version="1.0.9">
+</addon><addon id="script.module.exodusredux" name="Exodus Redux Module" provider-name="I-A-C" version="1.0.10">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -235,7 +235,7 @@ Fixed search issue caused by character accents
 		<platform>all</platform>
 		<summary lang="en">Exodus Redux</summary>
 	</extension>
-</addon><addon id="plugin.video.exodusredux" name="Exodus Redux" provider-name="I-A-C" version="1.0.7">
+</addon><addon id="plugin.video.exodusredux" name="Exodus Redux" provider-name="I-A-C" version="1.0.8">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodusredux" />
