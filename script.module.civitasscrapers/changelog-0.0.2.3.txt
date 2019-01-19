@@ -1,0 +1,13 @@
+CivitasScrapers Module Changelog:
+0.0.2.3
+- extra space
+0.0.2.2
+- typo LASTONE!!! I hope
+- removed 123movie scrapers due to hotlinking
+0.0.2.1
+- typo
+0.0.2
+- added DDLVALEY
+- added SCENERLS
+0.0.1
+- Initial commit

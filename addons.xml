@@ -148,7 +148,7 @@ Fixed search issue caused by character accents
 		- Usunięcie URLResolver z repozytorium / Removed URLResolver from Repo
 		</news>
   </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.18">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.26">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -183,7 +183,7 @@ Fixed search issue caused by character accents
         		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         		<license>Beerware rev. 42</license>
 		</extension>
-</addon><addon id="script.module.civitasscrapers" name="Civitas Scrapers Module" provider-name="13Clowns" version="0.0.2">
+</addon><addon id="script.module.civitasscrapers" name="Civitas Scrapers Module" provider-name="13Clowns" version="0.0.2.3">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4" />
