@@ -183,7 +183,7 @@ Fixed search issue caused by character accents
         		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         		<license>Beerware rev. 42</license>
 		</extension>
-</addon><addon id="script.module.civitasscrapers" name="Civitas Scrapers Module" provider-name="13Clowns" version="0.0.2.3">
+</addon><addon id="script.module.civitasscrapers" name="Civitas Scrapers Module" provider-name="CivitasAdmin" version="0.0.5.5">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4" />
@@ -200,7 +200,7 @@ Fixed search issue caused by character accents
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <assets>
-        <icon>icon.jpg</icon>
+        <icon>icon.png</icon>
         <fanart />
     </assets>
     <news />
@@ -235,7 +235,7 @@ Fixed search issue caused by character accents
 		<platform>all</platform>
 		<summary lang="en">Exodus Redux</summary>
 	</extension>
-</addon><addon id="plugin.video.exodusredux" name="Exodus Redux" provider-name="I-A-C" version="1.0.10">
+</addon><addon id="plugin.video.exodusredux" name="Exodus Redux" provider-name="I-A-C" version="1.0.7">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodusredux" />
@@ -243,7 +243,7 @@ Fixed search issue caused by character accents
 		<import addon="script.exodusredux.metadata" />
 		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
-		<import addon="script.module.civitasscrapers" />
+		<import addon="script.module.lambdascrapers" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
 	<extension library="default.py" point="xbmc.python.pluginsource">
