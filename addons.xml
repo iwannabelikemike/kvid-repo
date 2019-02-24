@@ -148,7 +148,7 @@ Fixed search issue caused by character accents
 		- Usunięcie URLResolver z repozytorium / Removed URLResolver from Repo
 		</news>
   </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.26">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.27">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
