@@ -138,7 +138,7 @@
 		<description />
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.module.exodusredux" name="Exodus Redux Module" provider-name="I-A-C" version="2.0.2">
+</addon><addon id="script.module.exodusredux" name="Exodus Redux Module" provider-name="I-A-C" version="2.0.3">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -148,7 +148,7 @@
 		<platform>all</platform>
 		<summary lang="en">Exodus Redux</summary>
 	</extension>
-</addon><addon id="plugin.video.exodusredux" name="Exodus Redux" provider-name="I-A-C" version="2.0.2">
+</addon><addon id="plugin.video.exodusredux" name="Exodus Redux" provider-name="I-A-C" version="2.0.3">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodusredux" />
@@ -166,7 +166,7 @@
 	<extension library="service.py" point="xbmc.service" start="startup" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Exodus Redux</summary>
-		<description lang="en">[B]Exodus Redux[/B][CR] [B]***OpenSources Edition***[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<description lang="en">[B]Exodus Redux[/B][CR] [B]***OpenScrapers Edition***[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
