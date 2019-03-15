@@ -22,7 +22,7 @@
 		<platform>all</platform>
 		<summary lang="en">PTW</summary>
 	</extension>
-</addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="iwannabelikemike" version="0.0.83">
+</addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="iwannabelikemike" version="0.0.84">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.addon.common" />
