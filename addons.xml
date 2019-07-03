@@ -78,33 +78,35 @@
 		- Usunięcie URLResolver z repozytorium / Removed URLResolver from Repo
 		</news>
   </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.27">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" optional="true" version="1.2.6" />
-		<import addon="plugin.video.gdrive" optional="true" />
-	</requires>
-	<extension library="lib" point="xbmc.python.module" />
-	<extension library="lib/default.py" point="xbmc.python.pluginsource" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-	</extension>
-</addon><addon id="script.module.openscrapers" name="OpenScrapers Module" provider-name="Addons4Kodi" version="0.0.0.3">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.33">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" optional="true" version="1.2.6" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension library="lib/default.py" point="xbmc.python.pluginsource" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+    </extension>
+</addon><addon id="script.module.openscrapers" name="OpenScrapers Module" provider-name="Addons4Kodi" version="0.0.1.90">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0" />
         <import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.js2py" />
     </requires>
     <extension library="lib" point="xbmc.python.module" />
     <extension library="lib/default.py" point="xbmc.python.pluginsource">
         <provides>executable</provides>
-    </extension>
+    </extension> 
         <extension point="xbmc.addon.metadata">
             <platform>all</platform>
             <summary lang="en">OpenScrapers Module</summary>
