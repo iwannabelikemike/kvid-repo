@@ -78,7 +78,7 @@
 		- Usunięcie URLResolver z repozytorium / Removed URLResolver from Repo
 		</news>
   </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.33">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.34">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -97,11 +97,10 @@
         <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
         <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
     </extension>
-</addon><addon id="script.module.openscrapers" name="OpenScrapers Module" provider-name="Addons4Kodi" version="0.0.1.90">
+</addon><addon id="script.module.openscrapers" name="OpenScrapers Module" provider-name="Addons4Kodi" version="0.0.1.95">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
         <import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.js2py" />
     </requires>
     <extension library="lib" point="xbmc.python.module" />
     <extension library="lib/default.py" point="xbmc.python.pluginsource">
@@ -118,7 +117,7 @@
         <icon>icon.png</icon>
         <fanart />
     </assets>
-    <news />
+    <news>v0.0.1.93 - Scraper cleanup and EOL fixes</news>
     </extension>
 </addon><addon id="script.exodusredux.metadata" name="Exodus Redux Metadata" provider-name="I-A-C" version="1.0.2">
 	<requires>
