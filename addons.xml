@@ -39,7 +39,7 @@
 		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="plugin.video.hhtv" name="HHTV" provider-name="iwannabelikemike" version="0.0.1">
+</addon><addon id="plugin.video.hhtv" name="HHTV" provider-name="iwannabelikemike" version="0.0.2">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.addon.common" />
