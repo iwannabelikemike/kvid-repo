@@ -11,17 +11,6 @@
     <platform>all</platform>
     <website>http://www.crummy.com/software/BeautifulSoup/</website>
   </extension>
-</addon><addon id="script.module.ptw" name="PTW Module" provider-name="PTW" version="2018.07.24.0">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.requests" />
-	</requires>
-	<extension library="lib" point="xbmc.python.module" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">PTW</summary>
-	</extension>
 </addon><addon id="plugin.video.sparkle" name="Sparkle" provider-name="iwannabelikemike" version="0.0.84">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
@@ -36,21 +25,6 @@
 		<summary lang="en">Just a little sparkle.</summary>
 		<description lang="en">A small plugin for playing reddit acestreams
 		</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon><addon id="plugin.video.hhtv" name="HHTV" provider-name="iwannabelikemike" version="0.0.2">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.addon.common" />
-		<import addon="script.module.requests" />
-	</requires>
-	<extension library="default.py" point="xbmc.python.pluginsource">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Play some Helix Hosting videos.</summary>
-		<description lang="en">A small plugin for playing HH videos.</description>
 		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 		<platform>all</platform>
 	</extension>
