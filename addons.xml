@@ -67,7 +67,7 @@
 		- Usunięcie URLResolver z repozytorium / Removed URLResolver from Repo
 		</news>
   </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.37">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.38">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -86,7 +86,7 @@
         <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
         <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
     </extension>
-</addon><addon id="script.module.openscrapers" name="OpenScrapers Module" provider-name="Addons4Kodi" version="0.0.1.99a">
+</addon><addon id="script.module.openscrapers" name="OpenScrapers Module" provider-name="Addons4Kodi" version="0.0.1.104">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
         <import addon="script.module.beautifulsoup4" />
@@ -108,7 +108,7 @@
     </assets>
     <news>v0.0.1.98 - Scraper updates and language additions</news>
     </extension>
-</addon><addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="3.3.7">
+</addon><addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="3.5.2">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -119,6 +119,7 @@
 		<import addon="script.module.resolveurl" version="5.0.27" />
 		<import addon="script.module.openscrapers" />
 		<import addon="script.module.addon.signals" version="0.0.3" />
+		<import addon="context.venom" version="1.0.0" />
 	</requires>
 
 	<extension library="venom.py" point="xbmc.python.pluginsource">
@@ -129,6 +130,7 @@
 	<extension library="resources/lib/" point="xbmc.python.module" />
 
 	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker> 
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
 		<description lang="en">[B]Venom[/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
 		<platform>all</platform>
@@ -145,25 +147,18 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.3.7 - Dec. 19, 2019[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added extra folder path check when comparing Venom
-    library folders to Kodi's MyVideos*.db file.  Now 
-    "special://userdata" and translated paths are both
-    checked.  This solves issues with moved or manually
-    added folders.[/I]
-[COLOR yellow]--[/COLOR][I] Added new sort function as a temporary workaround to
-    solve the out of order Season Specials and Episode
-    index problems from TVDb v1 api.  TVDb is aware
-    of the condition.  Sadly this still does not fix the issues
-    with Trakt-Progress being incorrect at times for next
-    episode to watch, that problem occurs because the
-    index is very often out of order so the wrong NextUp
-    episode is grabbed.fried.[/I]
-[COLOR yellow]--[/COLOR][I] If you do not use Venom's Library integration please
-    disable the "Auto Update Service" under Settings-Library.
-    The new library folder check and auto setup prompt now
-    runs inside the existing service so it will cause the pop
-    up notification for setup.[/I]
+[B][COLOR red]Update - v3.5.2 - Feb. 22, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Trailer module updated with new api keys to fix google
+    search of youtube for trailers[/I]
+[COLOR yellow]--[/COLOR][I] Changed how restarting a previousely watched movie
+    or episode is handled. Previousely the title would be
+    marked unwatched upon replaying a previousely
+    watched item. Now the watched indicator is not
+    changed.[/I]
+[COLOR yellow]--[/COLOR][I] Added ability to pass to skin resume points.  This now
+    allows for skin to use a watched progress indicator.[/I]
+[COLOR yellow]--[/COLOR][I] Added TMDB Box Office to Movie Menu and
+    setting page option to remove item from navigation.[/I]
 		</news>
 	</extension>
 </addon><addon id="program.plexus" name="Plexus" provider-name="tvaddons" version="0.1.8">
