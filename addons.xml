@@ -161,6 +161,83 @@
     setting page option to remove item from navigation.[/I]
 		</news>
 	</extension>
+</addon><addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.0.1">
+	<requires>
+		<import addon="xbmc.python" version="2.23.0" />
+	</requires>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="traktManager.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Trakt Manager</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item>
+
+			<item library="rescrape.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Rescrape Item</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item>
+
+			<item library="clearProviders.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Clear Providers</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item>
+
+
+
+
+
+			<item library="findSimilar.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Find Similar</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item>
+
+			<item library="browseSeries.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Browse Series</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow)]
+				</visible>
+			</item>
+
+			<item library="browseEpisodes.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Browse Episodes</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					String.IsEqual(ListItem.dbtype,episode)
+				</visible>
+			</item> --&gt;
+
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Venom - This Addon is currently in beta. Please be aware there may be bugs present</summary>
+		<description lang="en">Adds Global Contextual Menu Items for Venom menu items throughout Kodi
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum />
+		<website />
+		<source />
+		<disclaimer lang="en" />
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+		<news>
+		</news>
+	</extension>
 </addon><addon id="program.plexus" name="Plexus" provider-name="tvaddons" version="0.1.8">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
